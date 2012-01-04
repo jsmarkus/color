@@ -110,7 +110,7 @@ Color.prototype.V = function (q) {
 		return this.v;
 	} else {
 		if(q > 1 || q < 0) {
-			throw 'Bad H';
+			throw 'Bad V';
 		}
 		this.v = q;
 		return this;
@@ -153,9 +153,6 @@ Color.RGBStringToRgb = function (rgbString) {
         Number(parts[1]),
         Number(parts[2])
     ];
-	// return _(parts).map(function (i) {
-	// 	return Number(i);
-	// });
 }
 
 Color.hex2RGB = function (hex) {
